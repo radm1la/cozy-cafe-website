@@ -2,7 +2,7 @@
 
 .img{
     background: #F3B26F;
-    background:url('/images/home_bg_img.jpg') no-repeat;
+    background:url('images/home_bg_img.jpg') no-repeat;
     height: 100vh;
     width: 100%;
     background-position: center;
