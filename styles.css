@@ -1,6 +1,8 @@
 /* flex-wrap:wrap */
+
 .img{
-    background:url('images/coffeeCup.jpg') no-repeat;
+    background: #F3B26F;
+    background:url('/images/home_bg_img.jpg') no-repeat;
     height: 100vh;
     width: 100%;
     background-position: center;
@@ -69,5 +71,41 @@
 
 .center .btns button:nth-child(2):hover{
    opacity: 0.5;
+}
+
+
+
+
+/* responsivnes */
+
+@media screen and (max-width: 768px){
+    .center .title{
+        font-size: 38px;
+    }
+    .center .sub_title{
+        font-size: 28px;
+    }
+    .center .btns{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .center .btns button{
+        width: 150px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .center .title{
+        font-size: 28px;
+    }
+    .center .sub_title{
+        font-size: 20px;
+    }
+    .center .btns button{
+        width: 120px;
+        font-size: 16px;
+    }
 }
 
