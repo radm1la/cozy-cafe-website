@@ -1,0 +1,30 @@
+.bg_img{
+    background:url("images/chocolate-muffin-with-coffee-beans-sugar-powder.jpg") no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header{
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+    padding: 50px;
+    color: #fff;
+}
+
+.header .title{
+    font-size: 48px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px
+}
+
+.header .contact_info{
+    font-size: 18px;
+}
+
