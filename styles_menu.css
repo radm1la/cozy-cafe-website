@@ -1,18 +1,10 @@
-.bg_img{
-    background:url("images/chocolate-muffin-with-coffee-beans-sugar-powder.jpg") no-repeat;
-    height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
 
 .header{
     width: 100%;
     margin-top: 60px;
     text-align: center;
     padding: 50px;
-    color: #fff;
+    color: #000;
 }
 
 .header .title{
@@ -26,5 +18,101 @@
 
 .header .contact_info{
     font-size: 18px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabs{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    background-color: lightgray;
+    padding: 5px 10px;
+    border-radius: 40px;
+}
+
+.tabs .tab{
+    background-color:#fff;
+    padding: 5px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.tab.active{
+   background-color: gray;
+   color:#fff;
+}
+
+#drinks, #food {
+  width: 100%;
+  display: none; 
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.active_content {
+  display: flex;
+}
+
+.drink{
+    width:400px;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 20px 10px rgba(81, 79, 79, 0.689);
+}
+
+.drink img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.drink h1{
+ font-weight: 400;
+ margin-top: 20px;
+}
+
+.drink p{
+    padding: 20px;
+}
+
+.food{
+    width:400px;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 20px 10px rgba(81, 79, 79, 0.689);
+}
+
+.food img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.food h1{
+ font-weight: 400;
+ margin-top: 20px;
+}
+
+.food p{
+    padding: 20px;
 }
 

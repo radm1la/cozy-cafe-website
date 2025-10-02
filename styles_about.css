@@ -72,14 +72,6 @@
     justify-content: center;
     text-align: center;
     padding: 20px;
-    transition: all 0.3s ease;
-}
-
-
-.sec-2 .block:hover{
-    transform: scale(1.05);
-    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
 }
 
 
