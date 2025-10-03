@@ -3,6 +3,17 @@ body{
     width: 100%;
     height: 100vh;
 }
+
+.container{
+ opacity: 0;
+    animation: fadeIn 0.7s forwards;
+}
+
+@keyframes fadeIn {
+    to{
+        opacity: 1;
+    }
+}
 .header{
     width: 100%;
     text-align: center;
@@ -17,7 +28,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:20px
+    gap:20px;
+    margin-top: 50px;
 }
 
 .header .contact_info{
@@ -74,7 +86,7 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    box-shadow: 0 0 20px 10px rgba(81, 79, 79, 0.689);
+    box-shadow: 0 0 20px 5px rgba(107, 105, 105, 0.689);
     transition: all 0.4s ease;
 }
 
@@ -216,11 +228,11 @@ body{
         padding: 30px 15px;
     }
     .header .title {
-        font-size: 28px;
+        font-size: 36px;
         gap: 10px;
     }
     .header .contact_info {
-        font-size: 14px;
+        font-size: 16px;
     }
     .tabs {
         flex-wrap: wrap;
@@ -229,7 +241,7 @@ body{
     }
     .tabs .tab {
         padding: 5px 10px;
-        font-size: 12px;
+        font-size: 16px;
     }
     .content {
         flex-direction: column;

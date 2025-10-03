@@ -74,34 +74,13 @@ nav .menu ul li a.active{
     border-bottom: 4px solid #fff;
 }
 
-/* responsivnes */
-/* Desktop styles (default) */
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-}
 
-.menu ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-}
-
-.menu ul li a {
-  text-decoration: none;
-  color: #000;
-}
-
-/* Hamburger hidden on desktop */
 .hamburger {
   display: none;
   font-size: 28px;
   cursor: pointer;
 }
 
-/* Mobile styles */
 @media screen and (max-width: 768px) {
   .menu ul {
     flex-direction: column;
@@ -120,13 +99,9 @@ nav .menu ul li a.active{
     margin: 15px 0;
   }
 
-  .menu ul li a {
-    color: #fff;
-  }
-
   .hamburger {
     display: block;
-    color: #fff; /* show hamburger on mobile */
+    color: #fff;
   }
 
   .menu ul.show {
