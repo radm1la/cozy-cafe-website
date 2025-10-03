@@ -1,4 +1,7 @@
-
+body{
+    position: absolute;
+    width: 100%;
+}
 .header{
     width: 100%;
     margin-top: 60px;
@@ -48,19 +51,21 @@
    color:#fff;
 }
 
-#drinks, #food {
+
+
+.content {
   width: 100%;
-  display: none; 
+  display:none; 
   align-items: center;
   justify-content: space-evenly;
   margin-top: 50px;
 }
 
-.active_content {
-  display: flex;
+.active_content{
+    display: flex;
 }
 
-.drink{
+.card{
     width:400px;
     background-color: #fff;
     border-radius: 15px;
@@ -69,9 +74,14 @@
     align-items: center;
     text-align: center;
     box-shadow: 0 0 20px 10px rgba(81, 79, 79, 0.689);
+    transition: all 0.4s ease;
 }
 
-.drink img{
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card img{
     width: 100%;
     height: 300px;
     object-fit: cover;
@@ -79,40 +89,175 @@
     border-radius: 15px 15px 0 0;
 }
 
-.drink h1{
+.card h1{
  font-weight: 400;
  margin-top: 20px;
 }
 
-.drink p{
+.card p{
     padding: 20px;
 }
 
-.food{
-    width:400px;
-    background-color: #fff;
-    border-radius: 15px;
+
+.reserve_btn {
+    background-color: gray;
+    width: 55px;         
+    height: 55px;
+    border-radius: 50%;
+    padding: 0 10px;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-    box-shadow: 0 0 20px 10px rgba(81, 79, 79, 0.689);
+    justify-content: flex-start;
+    overflow: hidden;      
+    cursor: pointer;
+    transition: width 0.4s ease, border-radius 0.4s ease;
 }
 
-.food img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 15px 15px 0 0;
+.reserve_btn img {
+    width: 40px;        
+    height: 40px;
+    flex-shrink: 0;
+    margin-left: -2px;
+    transition: all 0.4s ease;
 }
 
-.food h1{
- font-weight: 400;
- margin-top: 20px;
+.reserve_btn span {
+    color: #fff;
+    white-space: nowrap;
+    margin-left: 10px;
+    opacity: 0;                   
+    transform: translateX(20px); 
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    font-weight: 500;
 }
 
-.food p{
-    padding: 20px;
+
+.reserve_btn:hover {
+    width: 190px;      
+    border-radius: 30px; 
 }
 
+.reserve_btn:hover span {
+    opacity: 1;        
+    transform: translateX(0);
+}
+
+
+
+
+/* responsivnes */
+
+@media (max-width: 1024px) {
+    .header {
+        padding: 40px 20px;
+    }
+    .header .title {
+        font-size: 36px;
+        gap: 15px;
+    }
+    .header .contact_info {
+        font-size: 16px;
+    }
+    .tabs {
+        gap: 8px;
+        padding: 5px 8px;
+    }
+    .tabs .tab {
+        padding: 5px 15px;
+        font-size: 14px;
+    }
+
+    .content {
+        flex-direction: row;  
+        flex-wrap: wrap;      
+        justify-content: center;
+        gap: 20px;         
+    }
+
+    .card {
+        width: calc(50% - 20px); 
+        max-width: 400px;        
+        margin-bottom: 20px;
+    }
+
+    .card img {
+        height: 250px;
+    }
+
+    .card h1 {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .card p {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .reserve_btn {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 15px;
+    }
+
+    .reserve_btn img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        padding: 30px 15px;
+    }
+    .header .title {
+        font-size: 28px;
+        gap: 10px;
+    }
+    .header .contact_info {
+        font-size: 14px;
+    }
+    .tabs {
+        flex-wrap: wrap;
+        gap: 5px;
+        padding: 5px 5px;
+    }
+    .tabs .tab {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+    .card img {
+        height: 200px;
+    }
+    .card h1 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .card p {
+        padding: 10px;
+        font-size: 12px;
+    }
+    .reserve_btn {
+        width: 45px;
+        height: 45px;
+        bottom: 15px;
+        right: 10px;
+    }
+    .reserve_btn img {
+        width: 30px;
+        height: 30px;
+    }
+}
