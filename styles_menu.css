@@ -179,6 +179,7 @@ body{
         width: calc(50% - 20px); 
         max-width: 400px;        
         margin-bottom: 20px;
+        box-shadow: 0 0 10px 1px rgba(81, 79, 79, 0.689) ;
     }
 
     .card img {
@@ -201,6 +202,7 @@ body{
         bottom: 20px;
         right: 15px;
     }
+
 
     .reserve_btn img {
         width: 35px;
@@ -257,5 +259,31 @@ body{
     .reserve_btn img {
         width: 30px;
         height: 30px;
+    }
+}
+
+/* when screen is 1024px and below .reserve_btn is just an regular fixed element */
+@media (max-width: 1024px) {
+    .reserve_btn {
+        width: 200px;        
+        border-radius: 30px;
+        justify-content: flex-start;
+    }
+
+    .reserve_btn img {
+        width: 35px;
+        height: 35px;
+        margin-left: 10px;  
+    }
+
+    .reserve_btn span {
+        opacity: 1;         
+        transform: translateX(0); 
+        margin-left: 10px;
+    }
+
+    .reserve_btn:hover {
+        width: 200px;
+        border-radius: 30px;
     }
 }
