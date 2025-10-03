@@ -1,32 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="styles_contact.css">
-</head>
-<body>
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="styles_contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <nav>
       <div class="menu">
         <div class="logo">
           <a href="index.html"
-            ><img src="images/icon.png" alt="icon img" class="icon_img" />Cozy Café</a
+            ><img src="images/icon.png" alt="icon img" class="icon_img" />Cozy
+            Café</a
           >
         </div>
-        <div class="hamburger">
-    &#9776; 
-  </div>
+        <div class="hamburger">&#9776;</div>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="menu.html">Menu</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="#" class="active">Contact</a></li>
           <li><a href="#">Feedback</a></li>
         </ul>
       </div>
     </nav>
+
+    <header>
+      <h1><i class="fa-solid fa-mug-hot"></i>Cozy Café</h1>
+      <p>Contact us or make a reservation for your next visit.</p>
+    </header>
+
+    <div class="container">
+      <!-- CONTACTS -->
+      <section class="contacts">
+        <h2>Visit Our Café</h2>
+         <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d399117.41834501637!2d-74.23948364683424!3d40.807400300978436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!5e1!3m2!1sru!2sge!4v1759501657691!5m2!1sru!2sge"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+        <div class="field">
+          <i class="fa-solid fa-location-dot"></i>
+          <div class="text">
+            <p>Address</p>
+            <p>123 Coffee Street, Downtown City, NY 12345</p>
+          </div>
+        </div>
+        <div class="field">
+          <i class="fa-solid fa-phone"></i>
+          <div class="text">
+            <p>Phone</p>
+            <p>(555) 123-4567</p>
+          </div>
+        </div>
+        <div class="field">
+          <i class="fa-solid fa-envelope"></i>
+          <div class="text">
+            <p>Email</p>
+            <p>hello@cozycafe.com</p>
+          </div>
+        </div>
+        <div class="field">
+          <i class="fa-solid fa-clock"></i>
+          <div class="text">
+            <p>Hours</p>
+            <p>
+              Monday - Friday: 7:00 AM - 8:00 PM <br />
+              Saturday - Sunday: 8:00 AM - 9:00 PM
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- reservation -->
+       <section class="reservation">
+        <form action="">
+          <h2><i class="fa-solid fa-calendar-days"></i> Make a Reservation</h2>
+
+          <div class="group1">
+            <label>
+            Full Name *
+            <input type="text" name="fullname" placeholder="Your full name" required />
+          </label>
+
+          <label>
+            Email *
+            <input type="email" name="email" placeholder="your.email@example.com" required />
+          </label>
+          </div>
+
+          <label class="phone-no">
+            Phone Number
+            <input type="tel" name="phone" placeholder="(555) 123-4567" />
+          </label>
+
+          <div class="group2">
+            <label>
+            Date *
+            <input type="date" name="date" required />
+          </label>
+
+          <label>
+            Time *
+            <input type="time" name="time" required />
+          </label>
+
+          <label>
+            Number of Guests *
+            <input type="number" name="guests" min="1" placeholder="Guests" required />
+          </label>
+          </div>
+
+          <label class="textarea">
+            Special Requests?
+            <textarea name="requests" placeholder="Special occasions or other..."></textarea>
+          </label>
+
+          <button type="submit">Submit Reservation Request</button>
+          <p>* Required fields. We'll contact you within 24 hours to confirm your reservation.</p>
+        </form>
+      </section>
+    </div>
+    <footer>
+      <hr>
+      <p>Thank you for choosing Cozy Cafe. We look forward to serving you! <i class="fa-solid fa-heart"></i></p>
+    </footer>
+
     <script src="navbar.js"></script>
-</body>
+  </body>
 </html>

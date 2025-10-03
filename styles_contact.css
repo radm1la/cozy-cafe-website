@@ -1,0 +1,285 @@
+/* HEADER */
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1{
+    font-size: 48px;
+    padding: 10px;
+    font-weight: 300;
+}
+
+header h1 i{
+    margin-right: 10px;
+}
+
+header p{
+    font-size: 18px;
+    color: gray;
+}
+
+/* MAIN */
+.container{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+h2{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* contacts */
+    .contacts{
+    width: 750px;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    gap:20px;
+}
+
+.contacts iframe{
+    height: 400px;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.contacts .field{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contacts .field i{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.contacts .field p{
+    font-weight: 300;
+    color: gray;
+    font-size: 14px;
+}
+
+.contacts .field p:first-of-type{
+    font-weight: 500;
+    color: #000;
+    font-size: 15px;
+}
+
+/* .reservation */
+
+.reservation{
+    width: 600px;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+    padding: 20px 40px;
+}
+
+.reservation form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap:15px;
+}
+
+form label{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-size: 14px;
+}
+
+label input{
+    border: none;
+    background-color: rgb(236, 234, 234);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form .group1{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.group1 label{
+    width: 50%;
+}
+
+label.phone-no,label.textarea{
+    width: 100%;
+}
+
+form .group2{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.group2 label{
+    width: calc(100% / 3);
+}
+
+form button{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid #000;
+    transition: all 0.4s ease;
+    font-size: 16px;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: transparent;
+    color: #000;
+}
+
+label.textarea{
+    height: 100px;
+}
+
+form textarea{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(236, 234, 234);
+    padding: 10px;
+    resize: none;
+}
+
+form p{
+    font-size: 14px;
+    color: gray;
+}
+
+
+/* footer */
+
+footer{
+    padding: 30px 200px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+footer p{
+    font-size: 16px;
+    color: gray;
+    margin-top:15px;
+}
+
+
+
+/* ----------- Responsive ----------- */
+
+/* Tablets (≤1024px) */
+@media screen and (max-width: 1024px) {
+  .contacts {
+    width: 600px;
+  }
+
+  .reservation {
+    width: 500px;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+}
+
+/* Small tablets / portrait (≤768px) */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .contacts,
+  .reservation {
+    width: 90%;
+  }
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+}
+
+/* Mobile (≤480px) */
+@media screen and (max-width: 480px) {
+  body {
+    padding: 0;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  header p {
+    font-size: 14px;
+  }
+
+  .contacts,
+  .reservation {
+    width: 100%;
+    padding: 15px;
+  }
+
+  form .group1,
+  form .group2 {
+    flex-direction: column;
+  }
+
+  .group1 label,
+  .group2 label {
+    width: 100%;
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}
