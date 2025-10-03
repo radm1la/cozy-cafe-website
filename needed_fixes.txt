@@ -1,6 +1,8 @@
-**Main page**
-- margin on top of title in menu page for small screens
-- add some space at the bottom ,u cant read text of last card
 
-**Navbar**
-- smaller width would look better
+**Contact page**
+- add js validation. on time based on the day of the week
+- js validation to number of guest: custom alert
+- phone no validation
+
+
+-isas kompzec naxe rogor gamoiyureba

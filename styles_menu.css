@@ -18,7 +18,7 @@ body{
     width: 100%;
     text-align: center;
     padding: 30px;
-    margin-top: 70px;
+    padding-top: 80px;
     color: #000;
 }
 
@@ -164,7 +164,7 @@ body{
 
 @media (max-width: 1024px) {
     .header {
-        padding: 40px 20px;
+        padding: 60px 20px;
     }
     .header .title {
         font-size: 36px;
@@ -227,7 +227,7 @@ body{
 
 @media (max-width: 768px) {
     .header {
-        padding: 30px 15px;
+        padding: 50px 15px;
     }
     .header .title {
         font-size: 36px;

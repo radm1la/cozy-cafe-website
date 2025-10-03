@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="styles_contact.css" />
     <link
+      rel="icon"
+      href="https://img.icons8.com/?size=100&id=4wecXK3Cb4GP&format=png&color=000000"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
       integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -91,12 +95,12 @@
           <div class="group1">
             <label>
             Full Name *
-            <input type="text" name="fullname" placeholder="Your full name" required />
+            <input type="text" name="fullname" placeholder="Your full name" id="fullname"/>
           </label>
 
           <label>
             Email *
-            <input type="email" name="email" placeholder="your.email@example.com" required />
+            <input type="email" name="email" placeholder="your.email@example.com"  />
           </label>
           </div>
 
@@ -108,17 +112,17 @@
           <div class="group2">
             <label>
             Date *
-            <input type="date" name="date" required />
+            <input type="date" name="date"  />
           </label>
 
           <label>
             Time *
-            <input type="time" name="time" required />
+            <input type="time" name="time"  />
           </label>
 
           <label>
             Number of Guests *
-            <input type="number" name="guests" min="1" placeholder="Guests" required />
+            <input id="guests" type="number" name="guests" placeholder="Guests"  />
           </label>
           </div>
 
@@ -132,11 +136,11 @@
         </form>
       </section>
     </div>
-    <footer>
+  <footer>
       <hr>
       <p>Thank you for choosing Cozy Cafe. We look forward to serving you! <i class="fa-solid fa-heart"></i></p>
     </footer>
-
     <script src="navbar.js"></script>
+    <script src="contact.js"></script>
   </body>
 </html>

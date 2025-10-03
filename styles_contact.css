@@ -36,12 +36,24 @@ header p{
     display: flex;
     align-items: start;
     justify-content: space-evenly;
+    opacity: 0;
+    animation: fadeIn 0.7s forwards;
+}
+
+@keyframes fadeIn {
+    to{
+        opacity: 1;
+    }
 }
 
 h2{
     width: 100%;
     font-size: 18px;
     font-weight: 500;
+}
+
+input,textarea{
+  outline: none;
 }
 
 /* contacts */
@@ -200,7 +212,6 @@ footer p{
 
 /* ----------- Responsive ----------- */
 
-/* Tablets (≤1024px) */
 @media screen and (max-width: 1024px) {
   .contacts {
     width: 600px;
@@ -219,7 +230,6 @@ footer p{
   }
 }
 
-/* Small tablets / portrait (≤768px) */
 @media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -241,7 +251,6 @@ footer p{
   }
 }
 
-/* Mobile (≤480px) */
 @media screen and (max-width: 480px) {
   body {
     padding: 0;
@@ -283,3 +292,5 @@ footer p{
     font-size: 14px;
   }
 }
+
+
