@@ -1,0 +1,6 @@
+**Main page**
+- margin on top of title in menu page for small screens
+- add some space at the bottom ,u cant read text of last card
+
+**Navbar**
+- smaller width would look better
